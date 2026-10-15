@@ -12,6 +12,7 @@ import controller.KelolaData;
 import controller.LayananController;
 import controller.PelangganController;
 import controller.ReservasiController;
+import orm.PelangganORMController;
 import view.InputView;
 import view.MenuView;
 
@@ -24,12 +25,13 @@ public class Main {
         KelolaData pelangganController = new PelangganController(menuView, inputView);
         KelolaData layananController = new LayananController(menuView, inputView);
         KelolaData reservasiController = new ReservasiController(menuView, inputView, pelangganController, layananController);
+        PelangganORMController pelangganORMController = new PelangganORMController(menuView);
 
         int pilihan;
 
         do {
             menuView.tampilkanMenuUtama();
-            pilihan = inputView.inputAngka("Pilih menu: ", 1, 4);
+            pilihan = inputView.inputAngka("Pilih menu: ", 1, 5);
 
             switch (pilihan) {
                 case 1:
@@ -42,9 +44,12 @@ public class Main {
                     reservasiController.jalankanMenu();
                     break;
                 case 4:
+                    pelangganORMController.tampilkan();
+                    break;
+                case 5:
                     menuView.tampilkanPesan("Program selesai. Terima kasih!");
                     break;
             }
-        } while (pilihan != 4);
+        } while (pilihan != 5);
     }
 }

@@ -10,15 +10,16 @@ package view;
  */
 public class MenuView {
 
-    public void tampilkanMenuUtama() {
+     public void tampilkanMenuUtama() {
         System.out.println();
         System.out.println("SISTEM MANAJEMEN SALON");
         System.out.println("1. Kelola Pelanggan");
         System.out.println("2. Kelola Layanan");
         System.out.println("3. Kelola Reservasi");
-        System.out.println("4. Keluar");
+        System.out.println("4. Tampilkan Pelanggan (ORM)");
+        System.out.println("5. Keluar");
     }
-
+     
     public void tampilkanSubMenu(String namaData) {
         System.out.println();
         System.out.println("MENU " + namaData.toUpperCase());
