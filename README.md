@@ -379,7 +379,7 @@ Masukan berupa angka diperiksa agar tidak berisi huruf, nama diperiksa agar hany
 
 Hasil penerapannya dapat dilihat ketika pengguna sengaja memasukkan data yang salah. Program tidak berhenti, melainkan menampilkan pesan kesalahan dan mengulang pertanyaannya.
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/25c3404a-6e28-4789-87d8-2c72cffcb57e" /
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/25c3404a-6e28-4789-87d8-2c72cffcb57e" />
 
 Alasan validasi tetap dipertahankan adalah karena data yang salah kini tidak hanya mengotori tampilan, tetapi benar-benar tersimpan permanen di dalam database. Memperbaiki data yang terlanjur salah masuk ke database jauh lebih merepotkan dibandingkan mencegahnya sejak awal. Selain itu, pemeriksaan di sisi program ini bekerja berdampingan dengan pembatasan di sisi database, misalnya kolom nama yang dibatasi lima puluh karakter dan kolom yang ditandai NOT NULL.
 
